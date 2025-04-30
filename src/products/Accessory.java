@@ -3,7 +3,8 @@ package src.products;
 public class Accessory extends Product{
     private String color;
 
-    public Accessory(String color){
+    public Accessory(String title, Double price, String color){
+        super(title, price);
         this.color = color;
     }
 

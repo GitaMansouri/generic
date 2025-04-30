@@ -5,10 +5,10 @@ public abstract class Product {
     private Double price;
     private String id;
 
-    protected Product(String title, Double price, String id){
+    protected Product(String title, Double price){
         this.title = title;
         this.price = price;
-        this.id = id;
+        this.id = generateId();
     }
 
     protected Product() {
