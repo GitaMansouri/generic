@@ -11,6 +11,9 @@ public abstract class Product {
         this.id = id;
     }
 
+    protected Product() {
+    }
+
 
     public String getTitle() {
         return title;
@@ -37,4 +40,6 @@ public abstract class Product {
     public String toString() {
         return "The price of product (" + title + ") with id: " + id + " is " + price;
     }
+
+    protected abstract String generateId();
 }
