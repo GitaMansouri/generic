@@ -34,15 +34,15 @@ import java.util.Scanner;
             notebookInventory.displayAll();
             accessoryInventory.displayAll();
 
-            bookInventory.removeItemsById(1002);
-            notebookInventory.removeItemsById(2002);
+            bookInventory.removeItemsById(102);
+            notebookInventory.removeItemsById(205);
 
             System.out.println(calculateTotalPrice(bookInventory));
             System.out.println(calculateTotalPrice(notebookInventory));
             System.out.println(calculateTotalPrice(accessoryInventory));
 
-            System.out.println("the book you that want to find: " + bookInventory.findItemsById(1001).toString());
-            bookInventory.findItemsById(4003);
+            System.out.println("the book you that want to find: " + bookInventory.findItemsById(101).toString());
+            bookInventory.findItemsById(403);
 
             accessoryInventory.applyDiscount("pencil", 30);
             accessoryInventory.applyDiscount("pen", 10);
